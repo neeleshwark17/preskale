@@ -15,9 +15,9 @@ app.use(
 app.use("/", indexRouter);
 
 if (process.env.NODE_ENV == "production") {
-  app.use(express.static("syncfarmer/build"));
+  app.use(express.static("client/build"));
   app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "syncfarmer", "build", "index.html"));
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
 
