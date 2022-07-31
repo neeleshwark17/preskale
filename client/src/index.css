@@ -25,3 +25,32 @@
 body {
   overflow-x: hidden;
 }
+
+.sideNav {
+  position: absolute;
+}
+.sideNavOpt {
+  width: 0;
+  animation: widTrans forwards 300ms;
+}
+.sOptions {
+  width: 0;
+  animation: showText forwards 300ms;
+}
+@keyframes widTrans {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 220px;
+  }
+}
+
+@keyframes showText {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 220px;
+  }
+}

@@ -1,18 +1,27 @@
 import React, { useState } from "react";
 import RateModal from "./RateModal";
-import { Link } from "react-router-dom";
+import SideNav from "./SideNav";
 
 export default function Nav() {
   const [ratingModal, setRatingModal] = useState(false);
+  const [sideNav, setSideNav] = useState(false);
 
   const toggleRating = () => {
     setRatingModal(!ratingModal);
   };
+
+  const toggleSideNav = () => {
+    setSideNav(!sideNav);
+    // if (sideNav == 0) setSideNav(0);
+    // else setSideNav(64);
+  };
+
   return (
     <section className="bg-navGreen w-full py-6 px-2 flex justify-start items-center">
+      {sideNav && <SideNav props={{ sideNav, toggleSideNav }} />}
       {ratingModal && <RateModal props={{ toggleRating }} />}
 
-      <section className="">
+      <section className="cursor-pointer" onClick={toggleSideNav}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-10 w-12"
@@ -27,16 +36,13 @@ export default function Nav() {
         </svg>
       </section>
       <p
-        className="text-4xl font-bold mx-5 text-white flex-1 cursor-pointer"
+        className="text-3xl font-bold mx-5 text-white flex-1 cursor-pointer"
         onClick={() => {
           window.location.href = "/";
         }}
       >
         Bird App
       </p>
-      <Link className="text-lg mx-5 text-white cursor-pointer" to="/gallery">
-        Gallery
-      </Link>
       <p
         className="text-lg mx-5 text-white cursor-pointer"
         onClick={toggleRating}
