@@ -1,0 +1,36 @@
+GET  http://localhost:4000/getUsers HTTP/1.1
+
+###
+POST http://localhost:4000/createUser HTTP/1.1
+Content-Type: application/json
+
+{
+    "userName": "Bulbul",
+    "spottedAt": "India",
+    "lastSpottedAt": "Tazakistan",
+    "conservationStatus": "low",
+    "scientificName": "xD"
+}
+###
+POST http://localhost:4000/updateUser HTTP/1.1
+Content-Type: application/json
+
+{
+    "userName": "Tank",
+    "spottedAt": "Punjab",
+    "lastSpottedAt": "Madras",
+    "scientificName": "bullet",
+    "oldScientificName": "jdSilv"
+}
+
+####
+POST http://localhost:4000/deleteUser HTTP/1.1
+Content-Type: application/json
+
+{
+    "scientificName": "ssj"
+}
+###
+GET http://localhost:4000/getUsers HTTP/1.1
+
+

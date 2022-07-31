@@ -1,0 +1,58 @@
+module.exports = {
+  content: ["./src/**/*.{html,js,jsx}"],
+  theme: {
+    screens: {
+      xs: "320px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1600px",
+    },
+    // fontFamily: {
+    //   DaysOne: ["Days One", "sans-serif"],
+    //   Rampart: ["Rampart One", "cursive"],
+    //   Poppins: ["Poppins", "sans-serif"],
+    // },
+
+    extend: {
+      colors: {
+        navGreen: "#379a82",
+        palewhite: "#f7f8f9",
+        bGray: "#e7eaee",
+        bRed: "#c74141",
+        lightGreen: "#ecfdf5",
+        darkGreen: "#064e3b",
+        lightRed: "#fef2f2",
+        darkRed: "#9f2929",
+      },
+      height: {
+        "10v": "10vh",
+        "20v": "20vh",
+        "30v": "30vh",
+        "40v": "40vh",
+        "50v": "50vh",
+        "60v": "60vh",
+        "70v": "70vh",
+        "80v": "80vh",
+        "90v": "90vh",
+        "100v": "100vh",
+        "150v": "150vh",
+        "200v": "200vh",
+      },
+      width: {
+        "10w": "10vw",
+        "20w": "20vw",
+        "30w": "30vw",
+        "40w": "40vw",
+        "50w": "50vw",
+        "60w": "60vw",
+        "70w": "70vw",
+        "80w": "80vw",
+        "90w": "90vw",
+        "100w": "100vw",
+      },
+    },
+  },
+  plugins: [],
+};

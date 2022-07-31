@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navGreen {
+  background-color: #379a82;
+}
+.centered {
+  position: absolute;
+  z-index: 123;
+  width: 100vw;
+  height: 100vh;
+  left: 0%;
+  top: 0%;
+}
+.glassed {
+  background: rgba(109, 109, 109, 0.36);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  border: 1px solid rgba(109, 109, 109, 0.1);
+}
+
+body {
+  overflow-x: hidden;
+}

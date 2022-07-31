@@ -1,0 +1,15 @@
+.btn {
+  background: #379a82;
+  padding-block: 0.7rem;
+  padding-inline: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  border: none;
+  outline: none;
+}
